@@ -1,0 +1,49 @@
+<!--
+Create a new website using HTML and Bootstrap. The website must include the following:
+    At least 2 pages -/.
+    A Bootstrap navbar -/, table -/, and form -/.
+    Bootstrap grid used throughout to format elements -/
+        Elements should stack vertically when the window is small -/
+-->
+<html>
+    <head>
+        <title>page1</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body class="bg-dark">
+        <nav class="navbar bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="text-light" href="page2.html">click to invert</a></li>
+            </ul>
+        </nav>
+        <div class="jumbotron text-center bg-light text-dark">
+            <h1>POSITIVE</h1>
+            <p>+-+-+-+-+-+-+-+-+-+-</p>
+        </div>
+        <div class="row container">
+            <div class="col-sm-8">
+                <table class="table table-bordered bg-light text-dark">
+                    <thead>
+                        <tr><th>_1___</th>  <th>_2___</th>  <th>_3___</th>  </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>_1_1_</td>  <td>_2_1_</td>  <td>_3_1_</td>  </tr>
+                        <tr><td>_1_2_</td>  <td>_2_2_</td>  <td>_3_2_</td>  </tr>
+                        <tr><td>_1_3_</td>  <td>_2_3_</td>  <td>_3_3_</td>  </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-4">
+                <form action="">
+                    <div class="form-group bg-light text-dark">
+                        <label for="input">Form input:</label>
+                       <input type="input" class="form-control bg-light text-dark" id="input" placeholder="input" name="input">
+                   </div>
+                    <button type="submit" class="btn btn-primary bg-light text-dark">Submit</button>
+                </form>
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
